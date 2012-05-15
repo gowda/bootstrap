@@ -34,3 +34,12 @@ nbproject
 .CVS
 .idea
 node_modules
+
+# autotools generated files
+Makefile.in
+missing
+install-sh
+aclocal.m4
+autom4te.cache
+configure
+build

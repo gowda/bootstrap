@@ -18,6 +18,10 @@
 @grayLighter:           #eee;
 @white:                 #fff;
 
+// New colors
+// ------------------------
+@bloodRed: #882811;
+@armyGreen: #6a6820;
 
 // Accent colors
 // -------------------------
@@ -145,11 +149,11 @@
 // Navbar
 // -------------------------
 @navbarHeight:                    40px;
-@navbarBackground:                @grayDarker;
-@navbarBackgroundHighlight:       @grayDark;
+@navbarBackground:                darken(@armyGreen, 15%);
+@navbarBackgroundHighlight:       @armyGreen;
 
-@navbarText:                      @grayLight;
-@navbarLinkColor:                 @grayLight;
+@navbarText:                      lighten(@armyGreen, 20%);
+@navbarLinkColor:                 lighten(@armyGreen, 20%);
 @navbarLinkColorHover:            @white;
 @navbarLinkColorActive:           @navbarLinkColorHover;
 @navbarLinkBackgroundHover:       transparent;
@@ -203,3 +207,10 @@
 // -------------------------
 @fluidGridColumnWidth:    6.382978723%;
 @fluidGridGutterWidth:    2.127659574%;
+
+
+// Theme definitions
+// ------------------------
+@themeBaseColor: @bloodRed;
+@themeBackground: lighten(@themeBaseColor, 50%);
+@themeTextColor: darken(@themeBaseColor, 10%);

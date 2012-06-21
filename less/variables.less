@@ -35,6 +35,12 @@
 @purple:                #7a43b6;
 
 
+// Theme definitions
+// ------------------------
+@themeBaseColor: @bloodRed;
+@themeBackground: lighten(@themeBaseColor, 50%);
+@themeTextColor: darken(@themeBaseColor, 10%);
+
 // Scaffolding
 // -------------------------
 @bodyBackground:        @white;
@@ -110,7 +116,7 @@
 @dropdownBorder:                rgba(0,0,0,.2);
 @dropdownLinkColor:             @grayDark;
 @dropdownLinkColorHover:        @white;
-@dropdownLinkBackgroundHover:   @linkColor;
+@dropdownLinkBackgroundHover:   @themeBackground;
 
 
 
@@ -209,8 +215,3 @@
 @fluidGridGutterWidth:    2.127659574%;
 
 
-// Theme definitions
-// ------------------------
-@themeBaseColor: @bloodRed;
-@themeBackground: lighten(@themeBaseColor, 50%);
-@themeTextColor: darken(@themeBaseColor, 10%);
